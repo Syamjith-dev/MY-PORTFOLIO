@@ -420,7 +420,7 @@ nav .fa-solid{
 
 @media only screen and (max-width: 600px){
     .header-text{
-        margin-top: 10%;
+        margin-top: 35%;
         font-size: 16px;
     }
     .header-text p{
@@ -456,7 +456,7 @@ nav .fa-solid{
         cursor: pointer;
     }
     nav .fa-bars{
-        margin-left: 210px;
+        margin-left: 230px;
     }
     .hero{
     width: 200px;
