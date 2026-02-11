@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="google4e1e6901b750eb13.html" />
+
+    <meta name="keywords" content="Syamjith, syam, web, web developer, portfolio, frontend developer, html css js">
+
+    <meta name="author" content="Syamjith">
+
+    <meta property="og:title" content="SYAMJITH-WEBDEVLOPER ">
+    <meta property="og:description"
+        content="Personal portfolio of Syamjith, a web developer skilled in HTML, CSS, JavaScript and modern web design.">
+    <meta property="og:image" content="https:/syamjith.netlify.app/banner.png">
+    <meta property="og:url" content="https://syamjith.netlify.app">
+    <meta property="og:type" content="website">
+
+
+    <title>SYAMJITH-WEBDEVLOPER</title>
+    <link rel="stylesheet" href="css\style.css">
+    <script src="https://kit.fontawesome.com/601fd8cf63.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/my-image.webp" type="image/x-icon">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h2 class="logo"><span>S</span>yamjith</h2>
+                <ul id="sidemenu">
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">MY WORK</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <img src="images/my-image.webp" alt="jpg" class="hero">
+            <div class="header-text">
+                <h1>Hi, i'm <span>S</span>yamjith from INDIA</h1>
+                <p>Web developer</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.instagram.com/im_syam_jith/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="" target="_blank" ><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://github.com/Syamjith-dev" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!--about section-->
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/my-image.webp" loading="lazy" alt="jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-tittle">ABOUT ME</h1>
+                    <p>I’m a passionate web developer who builds modern,
+                        responsive websites using HTML, CSS, and JavaScript.
+                        I’m currently expanding my skills in backend development with Node.js and
+                        creating dynamic user interfaces using React.
+                        I enjoy turning ideas into functional,
+                        user-friendly web experiences and continuously learning new technologies to improve my craft</p>
+
+                    <div class="tab-tittles">
+                        <p class="tab-links active-link" onclick="opentab('skill')">SKILL</p>
+                        <p class="tab-links" onclick="opentab('experience')">EXPERIENCE</p>
+                        <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skill">
+                        <ul>
+                            <li><span>UI/UX</span><br>Makking web app interfaces</li>
+                            <li><span>Web Devlopment</span><br>Web App devlopment</li>
+                            <li><span>APP devlopment</span><br>Makking Web APP</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - current</span><br>Makking web sites like user friendly</li>
+                            <li><span>2023 - 2024</span><br>Web App devlopment</li>
+                            <li><span>2022 - 2023</span><br>Learn front end web devlopment</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025</span><br>improve the skill </li>
+                            <li><span>2024</span><br>mern stack course i coursera</li>
+                            <li><span>2022</span><br>web devlopment in brototype</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--servieces-->
+
+    <section id="services">
+        <div class="container">
+            <h1 class="sub-tittle">SERVICES</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Landing Pages</h2>
+                    <p>I am make good user friendly landing page's like mordern design.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <h2>Figma design into website </h2>
+                    <p>I have convert the figma or other design's into website.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Normal websites to Responsive</h2>
+                    <p>I am convert the normal website's to responsive using tailwind css,Bootstrap,and media queries.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----portfolio--->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-tittle">MY WORK</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/music-palyer.webp" loading="lazy" alt="png">
+                    <div class="layer">
+                        <h3>Music player web APP</h3>
+                        <p>This is a Music player website like spotify.</p>
+                        <a href="https://xonify.netlify.app" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-1.webp" loading="lazy" alt="png" class="music-img">
+                    <div class="layer">
+                        <h3>Music player web APP</h3>
+                        <p></p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images\work-3.webp" loading="lazy" alt="png">
+                    <div class="layer">
+                        <h3>E-commerce Web Page</h3>
+                        <p>This is a start up E-commerce company e-commerce online purchasing app like Flipcart,Amazon.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See More</a>
+        </div>
+    </div>
+    <!------contact----->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-tittle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>Contact@syamjithloq@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9447572837</p>
+                    <div class="social-media-icons">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © syamjith by devloperspot</p>
+        </div>
+    </div>
+
+    <script src="js\script.js"></script>
+</body>
+
+</html>

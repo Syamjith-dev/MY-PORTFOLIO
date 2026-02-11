@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://syamjith.netlify.app/sitemap.xml
