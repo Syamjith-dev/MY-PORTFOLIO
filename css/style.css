@@ -68,14 +68,14 @@ nav ul li a:hover::after{
 .hero{
     width: 450px;
     height: 450px;
-    background: url(images\Wave.jpg);
+    background: none;
     background-size: cover;
     box-sizing: border-box;
     margin-top: 100px;
     margin-left: 800px;
     border-radius: 50%;
     box-shadow: 0px 10px 30px -15px #040404;
-    animation: zoomIn  1s ease forwards, floatimage 4s ease-in-out infinite;
+    animation: zoomIn 0.8s ease forwards;
     animation-delay: 1s, 2s;
     opacity: 0;
 }
@@ -102,9 +102,6 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: #0099ff;
 }
-.header-text h1 span{
-    color: #0099ff;
-}
 .social-media{
     width: 300px;
     margin: 330px 3%;
@@ -120,7 +117,7 @@ nav ul li a:hover::after{
 }
 .social-media a:hover{
     color: #0099ff;
-    cursor: pi;
+    cursor: pointer;
 }
 
 
@@ -221,7 +218,6 @@ nav ul li a:hover::after{
     border-right: 10px;
     border-radius: 20px;
     transition: background 0.5s, transform 0.5s;
-    transition: 1.5s;
 }
 .services-list div i{
     font-size: 50px;
@@ -269,7 +265,8 @@ nav ul li a:hover::after{
 }
 .work img{
     width: 100%;
-    height: 39vh;
+    height: auto;
+    aspect-ratio: 16 / 9;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
@@ -461,14 +458,14 @@ nav .fa-solid{
     .hero{
     width: 200px;
     height: 200px;
-    background: url(images\Wave.jpg);
+    background: url(images/Wave.jpg);
     background-size: cover;
     box-sizing: border-box;
     margin-top: 100px;
     margin-left: 110px;
     border-radius: 50%;
     box-shadow: 0px 10px 30px -15px #040404;
-    
+    animation: zoomIn 0.6s ease forwards;
    }
    .sub-tittle{
     font-size: 40px;
@@ -543,17 +540,7 @@ nav .fa-solid{
         opacity: 1;
     }
 }
-@keyframes floatimage{
-    0%{
-        transform: translateY(0);
-    }
-    50%{
-        transform: translateY(-20px);
-    }
-    100%{
-        transform: translateY(0);
-    }
-}
+
 @keyframes zoomIn{
     0%{
         transform: scale(0);
@@ -568,12 +555,18 @@ nav .fa-solid{
 @keyframes appear{
     from{
         opacity: 0;
-        scale: 0.5;
+        transform: translateY(30px);
     }
     to{
         opacity: 1;
-        scale: 1;
+        transform: translateY(0);
     }
 }
 
 
+    @media (prefers-reduced-motion: reduce){
+    *{
+        animation: none !important;
+        transition: none !important;
+    }
+}

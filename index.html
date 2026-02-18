@@ -3,26 +3,43 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="google-site-verification" content="google4e1e6901b750eb13.html" />
 
-    <meta name="keywords" content="Syamjith, syamjith kannur, syam kannur, syam, web, web developer, portfolio, frontend developer, html css js">
+    <meta name="keywords"
+        content="Syamjith, syamjith kannur, syam kannur, syam, web, web developer, portfolio, frontend developer, html css js">
 
     <meta name="author" content="Syamjith">
 
     <meta property="og:title" content="SYAMJITH-WEBDEVLOPER ">
+
+    <meta name="description"
+        content="Syamjith is a frontend web developer creating modern, responsive websites using HTML, CSS, and JavaScript.">
+
     <meta property="og:description"
         content="Personal portfolio of Syamjith, a web developer skilled in HTML, CSS, JavaScript and modern web design.">
     <meta property="og:image" content="https:/syamjith.netlify.app/banner.png">
+
     <meta property="og:url" content="https://syamjith.netlify.app">
+
     <meta property="og:type" content="website">
 
 
     <title>SYAMJITH-WEBDEVLOPER</title>
-    <link rel="stylesheet" href="css\style.css">
-    <script src="https://kit.fontawesome.com/601fd8cf63.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/601fd8cf63.js" crossorigin="anonymous" defer></script>
+
     <link rel="shortcut icon" href="images/my-image.webp" type="image/x-icon">
+
+    <link rel="preload" as="image" href="images/my-image.webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -39,15 +56,18 @@
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
-            <img src="images/my-image.webp" alt="jpg" class="hero">
+
+            <img src="images/my-image.webp" class="hero" alt="Syamjith web developer portrait" width="300" height="300">
             <div class="header-text">
                 <h1>Hi, i'm <span>S</span>yamjith from INDIA</h1>
                 <p>Web developer</p>
             </div>
+
             <div class="social-media">
-                <a href="https://www.instagram.com/im_syam_jith/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="" ><i class="fa-brands fa-linkedin"></i></a>
-                <a href="" ><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/im_syam_jith/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
                 <a href="https://github.com/Syamjith-dev" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
         </div>
@@ -71,9 +91,9 @@
                         user-friendly web experiences and continuously learning new technologies to improve my craft</p>
 
                     <div class="tab-tittles">
-                        <p class="tab-links active-link" onclick="opentab('skill')">SKILL</p>
-                        <p class="tab-links" onclick="opentab('experience')">EXPERIENCE</p>
-                        <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
+                        <p class="tab-links active-link" onclick="opentab('skill', this)">SKILL</p>
+                        <p class="tab-links active-link" onclick="opentab('experience', this)">EXPERIENCE</p>
+                        <p class="tab-links active-link" onclick="opentab('education', this)">EDUCATION</p>
                     </div>
                     <div class="tab-contents active-tab" id="skill">
                         <ul>
@@ -101,7 +121,8 @@
                     <div class="tab-contents" id="education">
                         <ul>
                             <li><span>Education</span><br>Higher Secondary Education – Plus One
-                            <br>GVHSS-Kurumathur <br>Commerce with Computer Application <br>2025-27</li>
+                                <br>GVHSS-Kurumathur <br>Commerce with Computer Application <br>2025-27
+                            </li>
                             <!-- <li><span>2024</span><br>mern stack course i coursera</li>
                             <li><span>2022</span><br>web devlopment in brototype</li> -->
                         </ul>
@@ -121,14 +142,14 @@
                     <i class="fa-solid fa-code"></i>
                     <h2>Landing Pages</h2>
                     <p>I am make good user friendly landing page's like mordern design.</p>
-                    <a href="#">Learn more</a>
+
                 </div>
 
                 <div>
                     <i class="fa-solid fa-cart-shopping"></i>
                     <h2>Figma design into website </h2>
                     <p>I have convert the figma or other design's into website.</p>
-                    <a href="#">Learn more</a>
+
                 </div>
 
                 <div>
@@ -136,18 +157,18 @@
                     <h2>Normal websites to Responsive</h2>
                     <p>I am convert the normal website's to responsive using tailwind css,Bootstrap,and media queries.
                     </p>
-                    <a href="#">Learn more</a>
+
                 </div>
             </div>
         </div>
     </section>
-    <!-----portfolio--->
+    <!-----My-work--->
     <div id="portfolio">
         <div class="container">
             <h1 class="sub-tittle">MY WORK</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/music-palyer.webp" loading="lazy" alt="png">
+                    <img src="images/music-palyer.webp" loading="lazy" alt="Music player web app project preview">
                     <div class="layer">
                         <h3>Music player web APP</h3>
                         <p>This is a Music player website like spotify.</p>
@@ -156,7 +177,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work-1.webp" loading="lazy" alt="png" class="music-img">
+                    <img src="images/work-1.webp" loading="lazy" alt=" project preview" class="music-img">
                     <div class="layer">
                         <h3>Music player web APP</h3>
                         <p></p>
@@ -164,7 +185,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images\work-3.webp" loading="lazy" alt="png">
+                    <img src="images/work-3.webp" loading="lazy" alt="E-commerce website project preview">
                     <div class="layer">
                         <h3>E-commerce Web Page</h3>
                         <p>This is a start up E-commerce company e-commerce online purchasing app like Flipcart,Amazon.
@@ -173,7 +194,7 @@
                     </div>
                 </div>
             </div>
-            <a href="" class="btn">See More</a>
+            <!-- <a href="" class="btn">See More</a> -->
         </div>
     </div>
     <!------contact----->
@@ -185,10 +206,12 @@
                     <p><i class="fa-solid fa-paper-plane"></i>Contact@syamjithloq@gmail.com</p>
                     <p><i class="fa-solid fa-phone"></i>9447572837</p>
                     <div class="social-media-icons">
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/im_syam_jith/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://github.com/Syamjith-dev" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
                 <div class="contact-right">
@@ -206,7 +229,7 @@
         </div>
     </div>
 
-    <script src="js\script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
